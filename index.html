@@ -257,7 +257,7 @@
 
     <div class="py-4">
         <p class="text-2xl font-semibold text-black">COVID-19 Cases in 
-            <span>Philippines</span>
+            <span id="country">Philippines</span>
         </p>
     </div>
 
@@ -266,8 +266,8 @@
             <!-- Active Cases -->
             <div class="bg-blue-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>3123,243</p>
                     <p>Active Cases</p>
+                    <p id="active-cases"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
@@ -279,8 +279,8 @@
             <!-- Today's Cases -->
             <div class="bg-yellow-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>--</p>
                     <p>Today's Cases</p>
+                    <p id="today-cases"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -291,8 +291,8 @@
             <!-- Total Cases -->
             <div class="bg-red-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>--</p>
                     <p>Total Cases</p>
+                    <p id="total-cases"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
@@ -304,8 +304,8 @@
             <!-- Recovered -->
             <div class="bg-green-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>--</p>
                     <p>Recovered</p>
+                    <p id="recovered"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -316,8 +316,8 @@
             <!-- Today Deaths -->
             <div class="bg-gray-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>1,233,254</p>
                     <p>Today Deaths</p>
+                    <p id="today-deaths"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
@@ -328,8 +328,8 @@
             <!-- Deaths -->
             <div class="bg-black p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>2,343,212</p>
                     <p>Deaths</p>
+                    <p id="deaths"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
