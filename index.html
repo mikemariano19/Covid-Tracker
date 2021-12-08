@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/build/styles.css">
-    <title>Document</title>
-</head>
+    <title>Covid-Tracker</title>
+</head> 
 <body class="font-body container mx-auto text-center max-w-screen-lg bg-gray-200 text-white">
     <header class="py-4 md:py-8">
         <div class="text-black ">
@@ -256,18 +256,18 @@
     </header>
 
     <div class="py-4">
-        <p class="text-2xl font-semibold text-black">COVID-19 Cases in 
-            <span id="country">Philippines</span>
+        <p class="text-4xl font-semibold text-black">COVID-19 Cases in 
+            <span id="country"></span>
         </p>
     </div>
 
     <section class="vertical-middle text-left">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-2xl">
             <!-- Active Cases -->
             <div class="bg-blue-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
                     <p>Active Cases</p>
-                    <p id="active-cases"></p>
+                    <p id="active-cases" class="text-3xl font-semibold"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
@@ -280,7 +280,7 @@
             <div class="bg-yellow-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
                     <p>Today's Cases</p>
-                    <p id="today-cases"></p>
+                    <p id="today-cases" class="text-3xl font-semibold"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -292,12 +292,11 @@
             <div class="bg-red-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
                     <p>Total Cases</p>
-                    <p id="total-cases"></p>
+                    <p id="total-cases" class="text-3xl font-semibold"></p>
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
-                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                 </div>
             </div>
@@ -305,19 +304,19 @@
             <div class="bg-green-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
                     <p>Recovered</p>
-                    <p id="recovered"></p>
+                    <p id="recovered" class="text-3xl font-semibold"></p>
                 </div>
-                <div>
+                <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
                 </div>
             </div>
             <!-- Today Deaths -->
             <div class="bg-gray-500 p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
                     <p>Today Deaths</p>
-                    <p id="today-deaths"></p>
+                    <p id="today-deaths" class="text-3xl font-semibold"></p>
                 </div>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
@@ -328,12 +327,12 @@
             <!-- Deaths -->
             <div class="bg-black p-4 md:p-8 rounded-xl flex justify-between">
                 <div>
-                    <p>Deaths</p>
-                    <p id="deaths"></p>
+                    <p>Total Deaths</p>
+                    <p id="deaths" class="text-3xl font-semibold"></p>
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
                     </svg>
                 </div>
             </div>
@@ -354,5 +353,6 @@
 
 
     <script src="api.js"></script>
+    <script src="https://use.fontawesome.com/6907d496d1.js"></script>
 </body>
 </html>
